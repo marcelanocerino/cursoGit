@@ -24,3 +24,4 @@ GIT:
 	git status 	=> compara el directorio de trabajo con el index
 	git config -- list=> imprime en pantalla la configuracion de git
 	git config--get-regexp <word> => busca en la configuracion la palabra index
+	rm - rf .git => elimina el repositorio (no afecta a los archivos y carpetas)
