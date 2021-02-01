@@ -1,0 +1,22 @@
+STAGING AREA - INDEX (Area de control de cambios)
+	Area donde se registran los archivos a los que vamos a estar realizandole
+	seguimiento, al iniciar un repositorio se encuentra vacio y debemos cargar
+	el contenido al cual queremos realizarle un control. Una vez agregado
+	al INDEX podemos efectuar los cambios en el repositorio.
+
+	NOTA: cuando agregamos un archivo, debemos EVITAR EDITARLO tras haberse
+	realizado la captura del codigo, debido a que cuando utilizamos el comando
+	correspondiente se hace una captura del mismo y lo que se almacena en formato
+	BLOB es eso.
+
+GIT:
+
+	git add		=> agrega archivos al index 
+			git add <file.extension> =>agrega un archivo al INDEX
+			git add <folder> => carga el contenido de la carpeta
+			git add .	=> carga todos los archivos que difieran con el INDEX
+	git rm		=> remueve un archivo del index
+			git rm <file.extension> => quita un archivo del INDEX (no hace seguimiento del archivo)
+			git rm <folder> => remueve del index los archivos de la carpeta
+	git restore -- staged => quitamos los archivos del INDEX cuando este todavia no contiene informacion de los mismos.
+
